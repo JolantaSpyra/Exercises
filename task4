@@ -1,0 +1,17 @@
+<?php
+// Napisz skrypt z użyciem pętli for wyświetlający:
+
+// *
+// **
+// ***
+// ****
+// *****
+
+$a = '*';
+
+for ($i=0; $i<=10; $i++){
+	for ($j=0; $j<$i; $j++){
+	echo $a;
+	}
+echo "</br>";
+}

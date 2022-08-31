@@ -1,0 +1,18 @@
+<?php
+// Napisz skrypt sumujący wszystkie liczby nieparzyste z przedziału od 0 do 10. Użyj instrukcji continue.
+
+$p = 0;
+
+for ($a = 1; $a<=10; $a++){
+	if($a % 2 == 0){
+		continue;
+	}
+	
+	$p+=$a;
+
+echo $a . "<br>";
+}
+
+echo "<br>" . $p . PHP_EOL;
+
+

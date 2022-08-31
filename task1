@@ -1,0 +1,17 @@
+<!--Napisz skrypt, który zamienia między sobą wartości dwóch zmiennych:-->
+
+<?php
+
+
+$zmiennax1 = 10;
+$zmiennax2 = 12;
+
+$pomocnicza = $zmiennax1;
+$zmiennax1 = $zmiennax2;
+$zmiennax2 = $pomocnicza;
+
+echo $zmiennax1 . PHP_EOL;
+echo $zmiennax2 . PHP_EOL;
+
+
+
