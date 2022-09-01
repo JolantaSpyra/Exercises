@@ -1,0 +1,15 @@
+<!--Utwórz tablicę czteroelementową zawierającą następujące wartości: “Fioletowy”, “Niebieski”, “Różowy”, “Zielony”. Następnie użyj jej do wyświetlenia listy:-->
+
+<!--Fioletowy-->
+<!--Niebieskie-->
+<!--Różowy-->
+<!--Zielony-->
+
+<ul>
+	<?php
+	$colors = ['Fioletowy', 'Niebieski', 'Różowy', 'Zielony'];
+	foreach ($colors as $listColors){
+		echo '<li>' . $listColors . '</li>';
+	}
+	?>
+</ul>

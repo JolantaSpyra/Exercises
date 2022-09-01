@@ -1,0 +1,8 @@
+<!--Napisz funkcję showName wyświetlającą imię przekazane do niej jako argument.-->
+<?php
+
+function showName($imie){
+	echo $imie;
+}
+
+showName('Jolanta');

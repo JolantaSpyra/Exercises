@@ -1,0 +1,12 @@
+<!--Przygotuj funkcję, która jako argument przyjmuje liczbę i zwraca prawdę, jeśli liczba jest podzielna przez 5 i 7.-->
+<?php
+
+function checkNumber($number){
+	if($number%5==0 && $number%7==0){
+		return true;
+	}else{
+		return false;
+	}
+}
+
+var_dump(checkNumber(70));
