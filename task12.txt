@@ -1,0 +1,29 @@
+<!--Przygotuj program, który podaną przez użytkownika kwotę pieniędzy (liczba całkowita) rozmieni na jak-->
+<!--najmniejszą ilość monet i banknotów o nominałach 1, 2, 5, 10 złotych-->
+<?php
+
+function rozmianka($kwota)
+{
+	$nominal = [10, 5, 2, 1];
+	$szt = [0];
+	
+
+	for ($i = 0; $i < count($nominal); $i++)
+	{
+		if ($kwota >= $nominal[$i])
+		{
+			$szt[$i] = intval($kwota / $nominal[$i]);
+			$kwota = $kwota % $nominal[$i];
+			echo "Nominał: " . $nominal[$i] . " - " . $szt[$i] . " szt. <br>";
+		}
+	}	
+
+
+
+}
+
+
+
+rozmianka(548);
+
+
