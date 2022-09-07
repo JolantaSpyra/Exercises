@@ -1,0 +1,22 @@
+<?php
+// Napisz skrypt, który sprawdza, która z wartości zmiennych $a, $b, $c jest największa:
+// $a = 10;
+// $b = 20;
+// $c = 30;
+// // tu umieść swój kod
+
+$a = 10;
+$b = 20;
+$c = 30;
+
+
+if($a > $b){
+	echo $a;
+}elseif($b > $c){
+	echo $b;
+}else{
+	echo $c;
+}
+
+
+// echo (max($a,$b,$c));

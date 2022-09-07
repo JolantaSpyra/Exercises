@@ -1,0 +1,39 @@
+
+<?php
+
+// Napisz skrypt, używając instrukcji switch, który umieszcza na stronie odpowiednią liczbę znaków + (plus) w
+// zależności od wartości zmiennej $ile:
+// • jeżeli $ile równe 1: wyświetl: +
+// • jeżeli $ile równe 2: wyświetl: ++
+// • jeżeli $ile równe 3: wyświetl: +++
+// • …
+// • jeżeli $ile równe 9: wyświetl: +++++++++
+// • jeżeli $ile mniejsze od 1 lub większe od 9: wyświetl: "Wartość poza zakresem"
+// $ile = 5;
+// // tu umieść swój kod
+
+$ile = 5;
+
+if ($ile < 1 || $ile > 5){
+	echo "Wartość poza zakresem";
+}
+else{
+	
+switch ($ile){
+	case 1:
+		echo "+";
+		break;
+	case 2:
+		echo "++";
+		break;
+	case 3:
+		echo "+++";	
+		break;
+	case 4:
+		echo "++++";
+		break;
+	case 5:
+		echo "+++++";	
+	
+}
+}

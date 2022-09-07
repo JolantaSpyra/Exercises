@@ -1,0 +1,16 @@
+<?php
+// Napisz skrypt odnajdujący największy element tablicy:
+
+$array = [10, 15, 9, 61, 78, 2, 44, 21, 30];
+
+$max = [0];
+
+foreach ($array as $liczba){
+	
+	if($max[0] < $liczba){
+		
+		$max = [$liczba];
+		
+	}
+}
+echo 'najwieksza jest ' . $max[0] . ' liczba ';

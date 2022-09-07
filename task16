@@ -1,0 +1,43 @@
+
+<?php
+
+// Napisz skrypt, używając instrukcji switch, który umieszcza na stronie napis z numerem kwartału roku w
+// zależności od zmiennej $miesicc:
+// • jeżeli $miesiac równe 1,2, lub 3: wyświetl: "Kwartał I"
+// • jeżeli $miesiac równe 4,5, lub 6: wyświetl: "Kwartał II"
+// • jeżeli $miesiac równe 7,8, lub 9: wyświetl: "Kwartał III"
+// • jeżeli $miesiac równe 10,11, lub 12: wyświetl: "Kwartał IV"
+// • jeżeli $miesiac mniejsze od 1 lub większe od 12: wyświetl: "Błędny numer miesiąca"
+// $ile = 11;
+// // tu umieść swój kod
+
+$ile = 13;
+
+if ($ile < 1 || $ile > 12){
+	echo "Błędny numer miesiąca";
+}
+else{
+	
+switch ($ile){
+	case 1:
+	case 2:
+	case 3:	
+		echo "Kwartał I";
+		break;
+	case 4:
+	case 5:
+	case 6:	
+		echo "Kwartał II";
+		break;
+	case 7:
+	case 8:
+	case 9:	
+		echo "Kwartał III";	
+		break;
+	case 10:
+	case 11:
+	case 12:	
+		echo "Kwartał IV";
+	
+}
+}

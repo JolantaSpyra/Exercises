@@ -1,0 +1,16 @@
+ <?php
+ 
+ 
+// Napisz skrypt z użyciem pętli do…while wyświetlający następującą listę:
+// • Element nr 1
+// • Element nr 2
+// • Element nr 3
+// • Element nr 4
+
+$tablica = ['Element nr 1', 'Element nr 2', 'Element nr 3', 'Element nr 4'];
+$i = 0;
+do{
+		echo $tablica[$i] . ", ";
+	$i++;
+}
+while ($i < count($tablica));

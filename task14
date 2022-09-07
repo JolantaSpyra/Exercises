@@ -1,0 +1,35 @@
+<!--Napisz skrypt, który wyświetla nazwę kraju i jego stolicę . Posłuż się tablicą $europa:-->
+<!--$europa = array("Włochy" => "Rzym", "Belgia" => "Bruksela",-->
+<!-- "Dania" => "Kopenhaga", "Finlandia" => "Helsinki",-->
+<!-- "Francja => "Paryż", "Niemcy" => "Berlin",-->
+<!-- "Rosja" => "Francja", "Polska" => "Warszawa");-->
+<!--// tu umieść kod wyświetlający informacje wg schematu:-->
+<!--// Kraj: Włochy, stolica: Rzym-->
+<!--// …-->
+<!--// Kraj: Polska, stolica: Warszawa-->
+
+
+<?php
+$europa = [
+	"Włochy" => "Rzym",
+	"Belgia" => "Bruksela",
+	"Dania" => "Kopenhaga",
+	"Finlandia" => "Helsinki",
+	"Francja" => "Paryż",
+	"Niemcy" => "Berlin",
+	"Rosja" => "Francja",
+	"Polska" => "Warszawa"
+	];
+	
+
+	// $p = array_keys($europa,"Rzym");
+	// print_r ("Państwo->". $p[0]. " Miasto->".$europa["Włochy"]);
+	
+	foreach ($europa as $klucz => $wartosc){
+		if ($wartosc == 'Rzym'){
+			echo " Kraj: " . $klucz . ", stolica: " . $wartosc . PHP_EOL; 
+		}
+		if ($wartosc == 'Warszawa'){
+			echo " Kraj: " . $klucz . ", stolica: " . $wartosc; 
+		}
+	 }

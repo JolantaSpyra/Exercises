@@ -1,0 +1,12 @@
+ <?php
+ 
+ 
+// Wyświetl: "PHP1 PHP2 PHP3 PHP4 PHP5 PHP6 PHP7 PHP8 PHP9 PHP10". Użyj pętli while.
+
+$tablica = ['PHP1', 'PHP2', 'PHP3', 'PHP4', 'PHP5', 'PHP6', 'PHP7', 'PHP8', 'PHP9', 'PHP10'];
+$i = 0;
+while ($i < count($tablica)){
+	echo $tablica[$i] . ", ";
+	$i++;
+}
+
